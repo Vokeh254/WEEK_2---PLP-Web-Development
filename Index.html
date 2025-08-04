@@ -6,7 +6,7 @@
     <title>Week 2</title>
 </head>
 <body>
-    <h1>Enhanced HTML Elements</h1>
+    <h1> <u>Enhanced HTML Elements</u></h1>
     <h2>Definition list</h2>
     <dl>
         <dt>USA</dt>
@@ -33,5 +33,84 @@
             </ul>
         </li>
     </ol>
+    
+    <h2>Multimedia</h2>
+    <h3>Image</h3>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="200" height="200">
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="https://www.soundjay.com/Human/human-laugh-1.wav" type="audio/mpeg" >
+    </audio>
+    <h3>Video</h3>
+    <video controls width="500" height="300">
+        <source src="https://videos.pexels.com/video-files/2053100/2053100-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+    <h3>Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.835347908312!2d90.40674931490415!3d23.723077394431253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sShikhbe%20Shobai!5e0!3m2!1sen!2sbd!4v1620361219870!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h3>Embed</h3>
+
+    <h2>Table</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Male</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Female</td>
+                <td>UK</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Forms</h2>
+    <form action="...location" method="post">
+        <label for="username">Username : </label>
+        <input type="text" name="username" id="username">
+        <br><br>
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <br><br>
+        <label for="confirm-password">Confirm Password : </label>
+        <input type="password" name="confirm-password" id="confirm-password">
+        <br><br>
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label><br>
+        <br><br>
+        <label for="country">Country : </label>
+        <select name="country" id="country">
+            <option value="">--Select Country--</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies" id="reading" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="hobbies" id="writing" value="writing">
+        <label for="writing">Writing</label>
+        <br><br>
+        <label for="bio">Bio : </label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter your bio"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
